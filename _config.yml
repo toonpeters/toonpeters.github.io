@@ -1,6 +1,6 @@
 title: Toon Peters
 description: A personal portfolio, selected projects, and notes.
-url: https://toonpeters99.github.io
+url: https://toonpeters.github.io
 baseurl: ""
 markdown: kramdown
 permalink: /writing/:title/

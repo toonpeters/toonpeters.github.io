@@ -7,7 +7,7 @@
     <title>{% if page.title %}{{ page.title | escape }} — {% endif %}{{ site.title | escape }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
@@ -15,9 +15,8 @@
       <header class="site-header">
         <a class="wordmark" href="{{ '/' | relative_url }}">{{ site.title | escape }}<span class="wordmark-dot">.</span></a>
         <nav class="site-nav" aria-label="Main navigation">
-          <a href="{{ '/' | relative_url }}#work">Work</a>
+          <a href="{{ '/' | relative_url }}#work">Projects</a>
           <a href="{{ '/blog/' | relative_url }}">Writing</a>
-          <a href="mailto:hello@example.com">Contact <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
@@ -26,7 +25,7 @@
       </main>
 
       <footer class="site-footer">
-        <span>Made with care, published on GitHub Pages.</span>
+        <span>© Toon Peters</span>
         <a href="#main-content">Back to top ↑</a>
       </footer>
     </div>

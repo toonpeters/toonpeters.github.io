@@ -4,89 +4,20 @@ title: Home
 description: A personal portfolio of work, projects, and writing.
 ---
 <section class="intro" aria-labelledby="intro-title">
+  <img class="profile-image" src="{{ '/assets/images/ToonPeters.png' | relative_url }}" alt="Toon Peters">
   <div class="intro-copy">
-    <p class="eyebrow"><span class="status-mark"></span> PORTFOLIO & NOTES</p>
-    <h1 id="intro-title">Your Name<span class="title-period">.</span></h1>
-    <p class="intro-lede">I make thoughtful things with technology, design, and a little curiosity.</p>
-    <p class="intro-body">Welcome to my corner of the internet. This is where I collect the work I care about, the things I am learning, and the ideas worth writing down.</p>
-    <div class="intro-links">
-      <a href="https://github.com/" aria-label="GitHub profile">GitHub <span aria-hidden="true">↗</span></a>
-      <a href="https://www.linkedin.com/" aria-label="LinkedIn profile">LinkedIn <span aria-hidden="true">↗</span></a>
-      <a href="mailto:hello@example.com">Email <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-  <aside class="intro-art" aria-label="A small abstract composition">
-    <div class="art-grid"></div>
-    <div class="art-orbit orbit-one"></div>
-    <div class="art-orbit orbit-two"></div>
-    <span class="art-index">FIELD NOTES<br>NO. 001</span>
-    <span class="art-coordinate">42° 21' N<br>71° 03' W</span>
-  </aside>
-</section>
-
-<section class="section experience" aria-labelledby="experience-title">
-  <div class="section-heading">
-    <p class="eyebrow">A FEW CHAPTERS</p>
-    <h2 id="experience-title">Experience &amp; learning</h2>
-  </div>
-  <div class="timeline">
-    <article class="timeline-item">
-      <span class="timeline-date">2025 — NOW</span>
-      <div><h3>Role or current focus</h3><p>Organization · A sentence about what you do and what you are learning.</p></div>
-    </article>
-    <article class="timeline-item">
-      <span class="timeline-date">2023 — 2025</span>
-      <div><h3>Previous role or study</h3><p>Organization · Add a detail that gives this experience its own shape.</p></div>
-    </article>
-    <article class="timeline-item">
-      <span class="timeline-date">ALONG THE WAY</span>
-      <div><h3>Courses, communities, and experiments</h3><p>List the classes, teams, or independent explorations that matter to you.</p></div>
-    </article>
+    <h1 id="intro-title">Toon Peters</h1>
+    <p class="intro-body">I am Toon and I like to make bikes and creative solutions with 3D printing and wood.</p>
   </div>
 </section>
 
 <section class="section projects" id="work" aria-labelledby="work-title">
-  <div class="section-heading section-heading-row">
-    <div><p class="eyebrow">SELECTED WORK</p><h2 id="work-title">Things I have made</h2></div>
-    <span class="section-count">01 — 03</span>
-  </div>
+  <div class="section-heading"><h2 id="work-title">Projects</h2></div>
   <div class="project-grid">
-    <article class="project project-featured">
-      <div class="project-art art-coral"><span>01</span><div class="project-shape shape-a"></div><div class="project-shape shape-b"></div></div>
-      <div class="project-meta"><span>PROJECT / 2025</span><span>DESIGN + BUILD</span></div>
-      <h3>Project title</h3>
-      <p>A short, specific description of the challenge, your approach, and what came out of it.</p>
-    </article>
     <article class="project">
-      <div class="project-art art-green"><span>02</span><div class="project-shape shape-c"></div><div class="project-shape shape-d"></div></div>
-      <div class="project-meta"><span>PROJECT / 2024</span><span>SOFTWARE</span></div>
-      <h3>Another project</h3>
-      <p>Keep this to one or two lines so the work is easy to scan.</p>
-    </article>
-    <article class="project">
-      <div class="project-art art-blue"><span>03</span><div class="project-shape shape-e"></div><div class="project-shape shape-f"></div></div>
-      <div class="project-meta"><span>PROJECT / 2023</span><span>EXPERIMENT</span></div>
-      <h3>A small experiment</h3>
-      <p>Include a link to a demo, repository, or longer project page when available.</p>
+      <img class="project-image" src="{{ '/assets/images/IMG_9465.jpg' | relative_url }}" alt="Open earplug case with spare inserts stored in the lid" loading="lazy">
+      <h3>Earplug insert holder</h3>
+      <p>A small holder bonded inside the case lid keeps the spare Loop earplug inserts in place, while leaving room for the earplugs when the case closes.</p>
     </article>
   </div>
-</section>
-
-<section class="section writing-preview" aria-labelledby="writing-title">
-  <div class="section-heading section-heading-row">
-    <div><p class="eyebrow">FROM THE NOTEBOOK</p><h2 id="writing-title">Writing</h2></div>
-    <a class="text-link" href="{{ '/blog/' | relative_url }}">All writing <span aria-hidden="true">↗</span></a>
-  </div>
-  {% if site.posts.size > 0 %}
-    <div class="post-list">
-      {% for post in site.posts limit: 3 %}
-        <a class="post-row" href="{{ post.url | relative_url }}">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-          <span>{{ post.title | escape }}</span><span class="row-arrow" aria-hidden="true">↗</span>
-        </a>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p class="empty-note">The first note is taking shape. Check back soon.</p>
-  {% endif %}
 </section>
