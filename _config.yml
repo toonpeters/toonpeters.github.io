@@ -1,0 +1,9 @@
+title: Toon Peters
+description: A personal portfolio, selected projects, and notes.
+url: https://toonpeters99.github.io
+baseurl: ""
+markdown: kramdown
+permalink: /writing/:title/
+timezone: Europe/Brussels
+
+plugins: []

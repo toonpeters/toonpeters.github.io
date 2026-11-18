@@ -1,0 +1,25 @@
+---
+layout: default
+title: Writing
+description: Essays, project notes, and ideas in progress.
+permalink: /blog/
+---
+<section class="page-intro">
+  <p class="eyebrow">THE NOTEBOOK</p>
+  <h1>Writing<span class="title-period">.</span></h1>
+  <p class="intro-lede">Project notes, ideas, and things I have learned along the way.</p>
+</section>
+<section class="section blog-index" aria-label="All posts">
+  {% if site.posts.size > 0 %}
+    <div class="post-list">
+      {% for post in site.posts %}
+        <a class="post-row" href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          <span>{{ post.title | escape }}</span><span class="row-arrow" aria-hidden="true">↗</span>
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-note">No posts yet. The first article will appear here.</p>
+  {% endif %}
+</section>
