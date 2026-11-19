@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: A personal portfolio of work, projects, and writing.
+description: A personal portfolio of projects.
 ---
 <section class="intro" aria-labelledby="intro-title">
   <img class="profile-image" src="{{ '/assets/images/ToonPeters.png' | relative_url }}" alt="Toon Peters">
@@ -13,11 +13,21 @@ description: A personal portfolio of work, projects, and writing.
 
 <section class="section projects" id="work" aria-labelledby="work-title">
   <div class="section-heading"><h2 id="work-title">Projects</h2></div>
-  <div class="project-grid">
-    <article class="project">
-      <img class="project-image" src="{{ '/assets/images/IMG_9465.jpg' | relative_url }}" alt="Open earplug case with spare inserts stored in the lid" loading="lazy">
-      <h3>Earplug insert holder</h3>
-      <p>A small holder bonded inside the case lid keeps the spare Loop earplug inserts in place, while leaving room for the earplugs when the case closes.</p>
-    </article>
-  </div>
+  {% if site.posts.size > 0 %}
+    <div class="project-list">
+      {% for post in site.posts %}
+        <a class="project-row" href="{{ post.url | relative_url }}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          <span class="project-title">{{ post.title | escape }}</span>
+          {% if post.image %}
+            <img class="project-thumb" src="{{ post.image | relative_url }}" alt="" loading="lazy">
+          {% else %}
+            <span class="project-thumb" aria-hidden="true"></span>
+          {% endif %}
+        </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-note">No projects yet.</p>
+  {% endif %}
 </section>

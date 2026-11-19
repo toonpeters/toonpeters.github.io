@@ -1,0 +1,12 @@
+{%- comment -%}
+  Usage: {% include figure.html src="/assets/images/foo.jpg" caption="Some text" size="small" %}
+  - caption is used for both the alt text and the figcaption
+  - size is optional: small | medium | large | full (default: full width)
+  - optional alt="..." overrides the alt text if it should differ
+{%- endcomment -%}
+<figure{% if include.size %} class="{{ include.size }}"{% endif %}>
+	<img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | strip_html | escape }}" loading="lazy">
+	{%- if include.caption %}
+	<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>
+	{%- endif %}
+</figure>

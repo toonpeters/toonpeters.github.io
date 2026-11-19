@@ -217,8 +217,24 @@ body {
 .post-body img { display: block; max-width: 100%; height: auto; margin: 24px auto; }
 .post-body figure { margin: 26px 0; }
 .post-body figcaption { margin-top: 6px; color: #555; font-size: 13px; }
+.post-body figure img { width: 100%; margin: 0; }
+/* Figure sizes: <figure class="small|medium|large|full"> (no class = full) */
+.post-body figure.small { max-width: 35%; margin-left: auto; margin-right: auto; }
+.post-body figure.medium { max-width: 55%; margin-left: auto; margin-right: auto; }
+.post-body figure.large { max-width: 80%; margin-left: auto; margin-right: auto; }
+.post-body figure.full { max-width: 100%; }
+@media (max-width: 700px) {
+  .post-body figure.small { max-width: 60%; }
+  .post-body figure.medium, .post-body figure.large { max-width: 100%; }
+}
 .post-body a { color: #164b78; }
-.project-image { display: block; width: 100%; max-height: 440px; margin-bottom: 18px; object-fit: cover; object-position: center 55%; }
+.project-image { display: block; width: 100%; max-height: 260px; margin-bottom: 18px; object-fit: cover; object-position: center 55%; }
+.project-list { border-top: 1px solid #d7d7d7; }
+.project-row { display: grid; grid-template-columns: 150px minmax(0, 1fr) 144px; gap: 20px; align-items: center; min-height: 62px; padding: 8px 0; border-bottom: 1px solid #d7d7d7; color: inherit; text-decoration: none; }
+.project-row time { color: #555; font-family: var(--mono); font-size: 11px; }
+.project-title { font-size: 16px; }
+.project-thumb { display: block; width: 144px; height: 96px; object-fit: cover; object-position: center 55%; border-radius: 3px; background: #eee; }
+.project-row:hover .project-title { color: #164b78; }
 
 @media (max-width: 700px) {
   .site-shell { width: min(100% - 32px, 560px); }
@@ -228,6 +244,10 @@ body {
   .intro-body { font-size: 15px; }
   .section { padding: 24px 0 38px; }
   .project { padding: 16px; }
+  .project-row { grid-template-columns: 90px minmax(0, 1fr) 112px; gap: 12px; }
+  .project-row time { font-size: 10px; }
+  .project-title { font-size: 14px; }
+  .project-thumb { width: 112px; height: 76px; }
   .post-content { padding: 28px 0 48px; }
   .post-content h1 { font-size: 29px; }
 }
