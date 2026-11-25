@@ -3,38 +3,38 @@ layout: post
 title: "Cable Holder Bike"
 date: 2026-09-25
 description: "Fixing a broken cable holder and adding proper routing to a shifter outer cable."
-image: /assets/images/IMG_9465.jpg
-image_alt: "Fill in"
+image: /assets/images/images_cable_holder_bike/IMG_9615.jpg
+image_alt: "Blue 3D printed cable holder clamped on the bike frame above the rear derailleur"
 ---
 
 I was working on my girlsfriends new bike, a old aluminium mountainbike. She took all the components off and I restore or buy new parts. When cleaning the frame I saw that the cable guide just before the derailleur was broken. I think this is one of the most important cable guides as the wire must have no resistance for proper shifting. Perfect opportunity to fix this with a 3D print. 
 
-## Iterations
+The requirements were 
+- good diameter of tube piece so it grips firmly to the bike 
+- use a integrated hinge system for ease of use and install
+- shift cable holder on the side must go up at an angle so the shift cable makes minimum bends to the derailleur. This is very important this is for smooth shifting. 
+- use threaded inserts to clamp down the pipe holder. 
 
-### different sizes
+{% include figure.html src="/assets/images/images_cable_holder_bike/Cable_holder_bike.png" caption="3D model of the cable holder." size="large" %}
 
-Printed single posts in a range of diameters and tried each by hand, judging how firmly the insert sat and how easily it came off.
+## Iterations 
+the starting angle of the shifter cable. I printed some small guides to check the correct angle and ??? 
 
-### cord cutout
-
-The first holder also had a small cutout for a cord. The idea was to give me something to pull when removing an insert. In practice, the cord pullout method didn't work because the inserts material is to flexible.
-
-{% include figure.html src="/assets/images/IMG_9685.jpg" caption="loop inserts with a cord for easier pullout." size="small" %}
-
-
-### Orientation change
-
-I dropped the cutout and put the loop inserts with the small face down. The wider face gives the fingers a grip. Easy solution.
-
-{% include figure.html src="/assets/images/IMG_9320.jpg" caption="loop inserts are upside down on the inserts." size="small" %}
+{% include figure.html src="/assets/images/images_cable_holder_bike/IMG_9628.jpg" caption="The printed cable holder with its clamp screw." size="small" %}
 
 ## The result
 
-The insert holder is glued inside the case. Ready for usage!
+{% include figure.html src="/assets/images/images_cable_holder_bike/IMG_9615.jpg" caption="Cable holder mounted on the frame, guiding the shifter cable to the derailleur." size="small" %}
 
-{% include figure.html src="/assets/images/IMG_9322.jpg" caption="Loop insert holders in the earplug case." size="small" %}
+{% include figure.html src="/assets/images/images_cable_holder_bike/IMG_9618.jpg" caption="View from behind: the cable runs straight down to the derailleur." size="small" %}
 
-{% include figure.html src="/assets/images/IMG_9465.jpg" caption="Loop inserts in the holders." size="small" %}
+{% include figure.html src="/assets/images/images_cable_holder_bike/IMG_9619.jpg" caption="Close-up of the holder next to the broken original cable guide." size="small" %}
 
-{% include figure.html src="/assets/images/drawing_loop_insert.png" caption="2D Technical Drawing of loop insert holder" size="large" %}
+## thoughts
+it was interesting learning the integrated hinge mechanism. It took some trial and error to get it right.
+
+## what I would do different the next time
+always print a few test pieces to test the parameters (angle shifter tube, diameter pipe holder, ...)
+
+{% include figure.html src="/assets/images/images_cable_holder_bike/drawing_bike_holder.png" caption="2D Technical Drawing of the cable holder" size="large" %}
 
