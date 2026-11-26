@@ -223,7 +223,12 @@ body {
 .post-body figure.medium { max-width: 55%; margin-left: auto; margin-right: auto; }
 .post-body figure.large { max-width: 80%; margin-left: auto; margin-right: auto; }
 .post-body figure.full { max-width: 100%; }
+/* Photo grid: wrap figures in <div class="figure-grid"> for a 2-column layout */
+.post-body .figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; max-width: 80%; margin: 26px auto; }
+.post-body .figure-grid figure { max-width: none; margin: 0; }
+.post-body .figure-grid figure img { aspect-ratio: 1 / 1; object-fit: cover; }
 @media (max-width: 700px) {
+  .post-body .figure-grid { max-width: 100%; gap: 12px; }
   .post-body figure.small { max-width: 60%; }
   .post-body figure.medium, .post-body figure.large { max-width: 100%; }
 }

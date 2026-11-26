@@ -4,9 +4,9 @@
 	},
 	"[markdown]": {
 		"editor.quickSuggestions": {
-			"other": "on",
+			"other": "off",
 			"comments": "off",
-			"strings": "on"
+			"strings": "off"
 		}
 	}
 }
