@@ -3,7 +3,18 @@ description: A personal portfolio, selected projects, and notes.
 url: https://toonpeters.github.io
 baseurl: ""
 markdown: kramdown
-permalink: /projects/:title/
 timezone: Europe/Brussels
 
 plugins: []
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post

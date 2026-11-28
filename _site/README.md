@@ -18,6 +18,6 @@ GitHub Pages builds the Jekyll files in this repository automatically. The root 
 - Replace the sample name, introduction, experience, and project entries in `index.html`.
 - Update the site title and description in `_config.yml`.
 - Add social links or a portrait to the intro in `index.html` when you have those assets.
-- Add a post under `_posts/` using the filename format `YYYY-MM-DD-title.md` and the front matter used by the blog.
+- Add a project under `_projects/` as `title.md` (no date in the filename) and set `date:` in its front matter.
 
-The first article is based on the visible slide content in the linked Google Slides presentation and is published from `_posts/2026-11-18-earplug-insert-holder.md`.
+The first article is based on the visible slide content in the linked Google Slides presentation and is published from `_projects/earplug-insert-holder.md`.

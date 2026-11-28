@@ -13,9 +13,10 @@ description: A personal portfolio of projects.
 
 <section class="section projects" id="work" aria-labelledby="work-title">
   <div class="section-heading"><h2 id="work-title">Projects</h2></div>
-  {% if site.posts.size > 0 %}
+  {% assign projects = site.projects | sort: "date" | reverse %}
+  {% if projects.size > 0 %}
     <div class="project-list">
-      {% for post in site.posts %}
+      {% for post in projects %}
         <a class="project-row" href="{{ post.url | relative_url }}">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
           <span class="project-title">{{ post.title | escape }}</span>

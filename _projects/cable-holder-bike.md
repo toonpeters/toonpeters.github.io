@@ -4,7 +4,7 @@ title: "Cable Holder Bike"
 date: 2026-09-25
 description: "Fixing a broken cable holder and adding proper routing to a shifter outer cable."
 image: /assets/images/images_cable_holder_bike/IMG_9615.jpg
-image_alt: "Blue 3D printed cable holder clamped on the bike frame above the rear derailleur"
+image_alt: "3D printed cable holder for shift cable"
 ---
 
 I was working on my girlfriends new bike, a old aluminium mountainbike. She took all the components off and I built the bike up again with new or restored parts. When cleaning the frame I saw that the cable guide just before the derailleur was broken. This is one of the most important cable guides as the wire must have no resistance for proper shifting. Perfect opportunity to fix this with a 3D print. 
